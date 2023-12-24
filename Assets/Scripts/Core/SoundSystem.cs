@@ -9,7 +9,7 @@ public class SoundSystem : MonoSingleton<SoundSystem>
     List<AudioSource> _sources = new();
     Dictionary<string, AudioClip> _cachedClips = new();
 
-    protected override void Awake()
+    protected override void Initialize()
     {
         DontDestroyOnLoad(this);
 
